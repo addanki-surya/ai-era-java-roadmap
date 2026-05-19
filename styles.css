@@ -9,15 +9,15 @@
   --fg-dim: rgba(26, 24, 20, 0.74);
   --fg-faint: rgba(26, 24, 20, 0.5);
   --accent: oklch(0.55 0.15 30);
-  --c-teal-deep: #0d4c5c;
-  --c-teal: #2da6b3;
-  --c-purple: #6b4d80;
-  --c-pink: #e85a7a;
-  --c-amber: #d18a2a;
-  --c-emerald: #5a8d76;
-  --c-indigo: #3a4f7a;
-  --c-rust: #c2533c;
-  --c-mustard: #c89234;
+  --c-teal-deep: #3b82f6;
+  --c-teal: #0ea5e9;
+  --c-purple: #8b5cf6;
+  --c-pink: #06b6d4;
+  --c-amber: #06b6d4;
+  --c-emerald: #10b981;
+  --c-indigo: #6366f1;
+  --c-rust: #7c3aed;
+  --c-mustard: #f59e0b;
   --grain-opacity: 0.025;
   --radius: 16px;
   --radius-lg: 22px;
@@ -35,15 +35,15 @@
   --fg: #f0ece4;
   --fg-dim: rgba(240, 236, 228, 0.78);
   --fg-faint: rgba(240, 236, 228, 0.52);
-  --c-teal-deep: #166678;
-  --c-teal: #3ec0cf;
-  --c-purple: #8865a3;
-  --c-pink: #ff6f8e;
-  --c-amber: #e3a142;
-  --c-emerald: #6fa68b;
-  --c-indigo: #5772a8;
-  --c-rust: #e0664c;
-  --c-mustard: #dba84a;
+  --c-teal-deep: #3b82f6;
+  --c-teal: #0ea5e9;
+  --c-purple: #8b5cf6;
+  --c-pink: #06b6d4;
+  --c-amber: #06b6d4;
+  --c-emerald: #10b981;
+  --c-indigo: #6366f1;
+  --c-rust: #7c3aed;
+  --c-mustard: #f59e0b;
   --grain-opacity: 0.04;
 }
 
@@ -59,7 +59,7 @@ html {
 html, body {
   background: var(--bg);
   color: var(--fg);
-  font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.55;
@@ -78,7 +78,7 @@ body { overflow-x: clip; }
   background: var(--fg); color: var(--bg);
   padding: 10px 16px;
   border-radius: 8px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
   z-index: 1000;
   transition: top 200ms var(--ease);
@@ -101,7 +101,7 @@ body::before {
 }
 
 ::selection { background: var(--c-rust); color: #fff; }
-.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+.mono { font-family: 'Fira Code', ui-monospace, monospace; }
 
 /* ============ NAV ============ */
 .nav {
@@ -114,7 +114,7 @@ body::before {
 }
 .nav > * { pointer-events: auto; }
 .nav__brand {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--fg-dim);
   display: flex; align-items: center; gap: 12px;
@@ -125,12 +125,12 @@ body::before {
   background: linear-gradient(135deg, var(--c-rust), var(--c-amber), var(--c-purple));
   display: inline-flex; align-items: center; justify-content: center;
   color: #fff; font-weight: 600; font-size: 12px;
-  font-family: 'Inter Tight', sans-serif; letter-spacing: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif; letter-spacing: 0;
 }
 .nav__brand b { color: var(--fg); font-weight: 600; }
 .nav__right { display: flex; align-items: center; gap: 24px; }
 .nav__meta {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.12em;
   color: var(--fg-faint);
   display: flex; gap: 20px;
@@ -146,14 +146,14 @@ body::before {
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   color: var(--fg-dim);
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 12px;
   cursor: pointer;
   transition: border-color 200ms var(--ease), color 200ms var(--ease), background 200ms var(--ease);
 }
 .search-trigger svg { opacity: 0.8; }
 .search-trigger kbd {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px;
   padding: 2px 6px;
   background: color-mix(in srgb, var(--fg) 8%, transparent);
@@ -211,7 +211,7 @@ body::before {
   position: relative; overflow: hidden;
 }
 .hero__eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--c-rust);
   display: inline-flex; align-items: center; gap: 14px;
@@ -244,12 +244,12 @@ body::before {
 }
 .hero__title em {
   font-style: italic;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-weight: 400;
 }
 .hero__title-100x {
   display: inline-block;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic; font-weight: 400;
   background: linear-gradient(120deg, var(--c-pink), var(--c-rust), var(--c-amber));
   -webkit-background-clip: text; background-clip: text;
@@ -278,7 +278,7 @@ body::before {
   border: 1px solid color-mix(in srgb, var(--fg) 18%, transparent);
   background: var(--fg);
   color: var(--bg);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.14em;
@@ -293,7 +293,7 @@ body::before {
   width: 22px; height: 22px;
   border-radius: 50%;
   background: color-mix(in srgb, var(--bg) 14%, transparent);
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 0;
 }
@@ -310,13 +310,13 @@ body::before {
 }
 .hero__stat-num {
   font-size: 56px; font-weight: 400; letter-spacing: -0.03em;
-  font-family: 'Instrument Serif', serif;
-  background: linear-gradient(135deg, var(--c-rust), var(--c-amber));
+  font-family: 'Space Grotesk', serif;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .hero__stat-label {
   margin-top: 4px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--fg-faint);
 }
@@ -367,12 +367,12 @@ body::before {
   line-height: 1.05;
 }
 .agenda__title em {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic; font-weight: 400;
   color: var(--c-rust);
 }
 .agenda__sub {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-size: 18px; font-style: italic;
   color: var(--fg-dim);
   max-width: 36ch; line-height: 1.5;
@@ -390,7 +390,7 @@ body::before {
   display: flex; align-items: center; gap: 16px;
 }
 .agenda__projects-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--c-rust);
 }
@@ -403,7 +403,7 @@ body::before {
   background: var(--c-teal-deep);
   color: #fff;
   padding: 24px 22px 28px;
-  border-radius: 16px;
+  border-radius: 22px;
   min-height: 200px;
   display: flex; flex-direction: column;
   position: relative; cursor: pointer;
@@ -450,7 +450,7 @@ body::before {
   box-shadow: 0 0 0 5px color-mix(in srgb, var(--fg) 26%, transparent);
 }
 .agenda__tile-num {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 32px;
   font-weight: 300;
   letter-spacing: -0.02em;
@@ -466,7 +466,7 @@ body::before {
   position: relative; z-index: 1;
 }
 .agenda__tile-weeks {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.1em;
   opacity: 0.85;
   margin-top: 10px;
@@ -488,7 +488,7 @@ body::before {
 .agenda__tile.is-capstone[data-color="mustard"] { background: var(--c-mustard); }
 .agenda__tile.is-capstone[data-color="teal-deep"] { background: var(--c-teal-deep); }
 .agenda__tile-cap-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   color: #fff;
   background: rgba(0,0,0,0.22);
@@ -498,7 +498,7 @@ body::before {
   margin-bottom: auto;
 }
 .agenda__tile.is-capstone .agenda__tile-domain {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic;
   font-size: 13px;
   color: rgba(255,255,255,0.78);
@@ -546,7 +546,7 @@ body::before {
   display: block;
 }
 .instructor__label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--c-rust);
   margin-bottom: 12px;
@@ -558,7 +558,7 @@ body::before {
   margin-bottom: 6px;
 }
 .instructor__role {
-  font-family: 'Instrument Serif', serif; font-style: italic;
+  font-family: 'Space Grotesk', serif; font-style: italic;
   font-size: 18px; color: var(--fg-dim); margin-bottom: 16px;
 }
 .instructor__bio { font-size: 16px; line-height: 1.65; color: var(--fg-dim); max-width: 62ch; }
@@ -573,7 +573,7 @@ body::before {
 }
 .instructor__chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
 .instructor__chip {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; padding: 5px 11px;
   border-radius: 999px; border: 1px solid var(--line-strong);
   color: var(--fg-dim); background: var(--bg);
@@ -586,7 +586,7 @@ body::before {
   min-width: 156px;
 }
 .instructor__connect-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -664,7 +664,7 @@ body::before {
   border: 1px solid color-mix(in srgb, currentColor 36%, transparent);
   cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; font-weight: 600;
   color: var(--phase-color, var(--c-teal-deep));
   transition: transform 320ms var(--ease), color 320ms var(--ease), background 320ms var(--ease), box-shadow 320ms var(--ease), opacity 320ms var(--ease);
@@ -698,7 +698,7 @@ body::before {
   position: absolute; bottom: calc(100% + 12px);
   left: 50%; transform: translateX(-50%);
   background: var(--fg); color: var(--bg);
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 11px; font-weight: 500;
   padding: 6px 10px;
   border-radius: 8px;
@@ -737,7 +737,7 @@ body::before {
 }
 .phase__num-prefix {
   display: inline-block;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
   color: #fff; background: var(--c-rust);
   padding: 5px 10px; border-radius: 4px;
@@ -754,7 +754,7 @@ body::before {
 .phase__num-prefix[data-color="mustard"] { background: var(--c-mustard); }
 
 .phase__num {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 200;
   font-size: 96px; line-height: 1;
   letter-spacing: -0.05em;
@@ -783,7 +783,7 @@ body::before {
   padding: 22px 22px 20px;
   background: var(--bg-card);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 18px;
   border-left: 4px solid var(--c-rust);
 }
 .phase__weeks-block[data-color="teal-deep"] { border-left-color: var(--c-teal-deep); }
@@ -797,19 +797,19 @@ body::before {
 .phase__weeks-block[data-color="mustard"] { border-left-color: var(--c-mustard); }
 
 .phase__weeks-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--fg-faint); margin-bottom: 6px;
 }
 .phase__weeks {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 34px; font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--fg); line-height: 1.1;
 }
 .phase__weeks-detail {
   margin-top: 4px;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic;
   font-size: 14px; color: var(--fg-dim);
 }
@@ -817,7 +817,7 @@ body::before {
   margin-top: 20px;
   padding-top: 16px;
   border-top: 1px solid var(--line);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--fg-faint);
   display: grid;
@@ -843,7 +843,7 @@ body::before {
 .phase__diff-note {
   grid-column: 1 / -1;
   margin-top: 8px;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic;
   font-size: 13px;
   color: var(--fg-dim);
@@ -857,7 +857,7 @@ body::before {
   margin-top: 22px; padding: 8px 14px;
   background: var(--c-pink); color: #fff;
   border-radius: 6px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   font-weight: 500;
 }
@@ -931,7 +931,7 @@ body::before {
 }
 .tabbox__tab.active .tabbox__tab-num { color: var(--c-rust); }
 .tabbox__tab-num {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; font-weight: 500;
   color: var(--fg-faint);
   flex-shrink: 0; width: 28px;
@@ -946,7 +946,7 @@ body::before {
   position: relative; overflow: hidden;
 }
 .tabbox__panel-num {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--c-rust); margin-bottom: 12px;
 }
@@ -971,7 +971,7 @@ body::before {
   gap: 14px; align-items: baseline;
 }
 .tabbox__item-marker {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; color: var(--c-amber); font-weight: 600;
 }
 .tabbox__panel-content { animation: panelIn 420ms var(--ease-out); }
@@ -994,7 +994,7 @@ body::before {
   background: linear-gradient(to bottom, var(--c-rust), var(--c-amber));
 }
 .phase__endstate-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--c-rust);
   margin-bottom: 12px;
@@ -1005,7 +1005,7 @@ body::before {
   font-size: 19px; line-height: 1.5;
   color: var(--fg);
   font-style: italic;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
 }
 
 /* ============ CAPSTONES ============ */
@@ -1015,7 +1015,7 @@ body::before {
   position: relative; z-index: 2;
 }
 .capstones__eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--c-rust);
   display: flex; align-items: center; gap: 14px;
@@ -1028,7 +1028,7 @@ body::before {
   letter-spacing: -0.04em; max-width: 16ch;
 }
 .capstones__title em {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic; font-weight: 400;
   color: var(--c-rust);
 }
@@ -1060,7 +1060,7 @@ body::before {
 .capstone:nth-child(3)::before { background: var(--c-teal-deep); }
 .capstone__left { display: flex; flex-direction: column; gap: 16px; }
 .capstone__num {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.18em;
   padding: 5px 11px; border-radius: 4px;
   color: #fff; align-self: flex-start;
@@ -1070,13 +1070,13 @@ body::before {
 .capstone:nth-child(3) .capstone__num { background: var(--c-teal-deep); }
 .capstone__title { font-size: 26px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.2; }
 .capstone__phase {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.1em; color: var(--fg-faint);
 }
 .capstone__domain { font-size: 14px; color: var(--fg-dim); font-style: italic; }
 .capstone__stack { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; }
 .capstone__stack-pill {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; padding: 4px 10px;
   border: 1px solid var(--line-strong);
   border-radius: 999px;
@@ -1084,7 +1084,7 @@ body::before {
 }
 .capstone__build { display: flex; flex-direction: column; }
 .capstone__build-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--fg-faint); margin-bottom: 16px;
 }
@@ -1096,7 +1096,7 @@ body::before {
 }
 .capstone__build-item:first-of-type { border-top: none; }
 .capstone__build-num {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; color: var(--c-amber);
   flex-shrink: 0; padding-top: 4px; font-weight: 600;
 }
@@ -1105,11 +1105,11 @@ body::before {
   border-top: 1px solid var(--line);
   font-size: 16px; line-height: 1.5;
   color: var(--fg);
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic;
 }
 .capstone__proves-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-style: normal;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--c-rust); margin-right: 10px;
@@ -1124,7 +1124,7 @@ body::before {
 .footer__title {
   font-size: clamp(40px, 6vw, 88px);
   font-weight: 400;
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   letter-spacing: -0.03em; line-height: 1.05;
   max-width: 18ch; margin: 0 auto;
 }
@@ -1135,7 +1135,7 @@ body::before {
 }
 .footer__meta {
   margin-top: 60px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
   color: var(--fg-faint);
 }
@@ -1324,7 +1324,7 @@ body::before {
   .agenda__head { margin-bottom: 32px; }
   .agenda__tile {
     min-height: 156px;
-    border-radius: 12px;
+    border-radius: 18px;
     padding: 18px 16px 20px;
     transition: none;
   }
@@ -1337,7 +1337,7 @@ body::before {
   .instructor__card {
     padding: 28px 22px;
     gap: 26px;
-    border-radius: 16px;
+    border-radius: 22px;
   }
   .phase {
     grid-template-columns: 1fr;
@@ -1402,7 +1402,7 @@ body::before {
 }
 .outscope__head { max-width: 64ch; margin-bottom: 56px; }
 .outscope__eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--c-purple);
   margin-bottom: 22px;
@@ -1413,7 +1413,7 @@ body::before {
   letter-spacing: -0.035em; max-width: 18ch;
 }
 .outscope__title em {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic; font-weight: 400;
   color: var(--c-purple);
 }
@@ -1444,7 +1444,7 @@ body::before {
   border-radius: 0 3px 3px 0;
 }
 .outscope__card-num {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px; letter-spacing: 0.18em;
   color: var(--c-purple);
 }
@@ -1466,7 +1466,7 @@ body::before {
 }
 .outscope__card-pointer-label {
   display: block;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
   color: var(--fg-faint);
   margin-bottom: 6px;
@@ -1479,7 +1479,7 @@ body::before {
 }
 .next__head { max-width: 64ch; margin-bottom: 48px; }
 .next__eyebrow {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--c-emerald);
   margin-bottom: 22px;
@@ -1490,7 +1490,7 @@ body::before {
   letter-spacing: -0.035em; max-width: 16ch;
 }
 .next__title em {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Space Grotesk', serif;
   font-style: italic; font-weight: 400;
   color: var(--c-emerald);
 }
@@ -1519,7 +1519,7 @@ body::before {
   border-radius: 0 3px 3px 0;
 }
 .next__card-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--c-emerald);
   margin-bottom: 12px;
@@ -1579,13 +1579,13 @@ body::before {
 .cmdk__input {
   flex: 1;
   border: none; outline: none; background: transparent;
-  font-family: 'Inter Tight', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
   color: var(--fg);
 }
 .cmdk__input::placeholder { color: var(--fg-faint); }
 .cmdk__esc {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px;
   padding: 3px 7px;
   border: 1px solid var(--line-strong);
@@ -1625,7 +1625,7 @@ body::before {
   background: color-mix(in srgb, var(--c-rust) 16%, var(--bg-elev));
 }
 .cmdk__kind {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 9px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -1648,7 +1648,7 @@ body::before {
   text-overflow: ellipsis;
 }
 .cmdk__sub {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 11px;
   color: var(--fg-faint);
   white-space: nowrap;
@@ -1665,7 +1665,7 @@ body::before {
   background: var(--bg-elev);
 }
 .cmdk__hint kbd {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 10px;
   padding: 2px 6px;
   border: 1px solid var(--line-strong);
@@ -1691,4 +1691,34 @@ body::before {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* === CUSTOM OVERRIDES FOR DIFFERENTIATION === */
+.phase__card {
+  border-left: 4px solid var(--phase-color, #6366f1) !important;
+  border-radius: 4px 18px 18px 4px !important;
+}
+.hero__title-100x {
+  background: linear-gradient(135deg, #6366f1, #06b6d4) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.capstone {
+  border-radius: 22px !important;
+  border: 1px solid rgba(99, 102, 241, 0.2) !important;
+}
+.outscope__card, .next__card {
+  border-radius: 18px !important;
+}
+.dock__btn.active {
+  background: linear-gradient(135deg, #6366f1, #06b6d4) !important;
+}
+.tabbox__tab.active {
+  border-color: #6366f1 !important;
+  color: #6366f1 !important;
+}
+.footer__title em {
+  background: linear-gradient(135deg, #6366f1, #06b6d4) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
 }
