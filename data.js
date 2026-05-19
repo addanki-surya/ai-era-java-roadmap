@@ -107,40 +107,40 @@ window.ROADMAP = [
 
 window.CAPSTONES = [
   {
-    n: "C1",
+    n: 1,
     title: "Cognitive DevOps & Incident Automation Platform",
-    domain: "DevOps + AI",
-    weeks: "Spans all 12 weeks",
-    summary: "An event-driven platform that reads chaotic customer Technical Reports, isolates bugs in the Java/JS codebase, verifies K8s cluster settings, and delivers safe code patches autonomously.",
+    phase: "Spans all 6 phases (Weeks 1–12)",
+    domain: "DevOps + AI + Enterprise Java",
+    stack: ["React + SSE", "Spring WebFlux", "Java 21 Virtual Threads", "Apache Kafka", "Redis Semantic Cache", "LangChain4j + @Tool", "pgvector HNSW", "AWS Bedrock", "Docker + K8s + Helm"],
     build: [
-      "React dashboard with SSE streaming (tokens appear in real-time)",
-      "Spring WebFlux gateway with Kafka event buffering",
-      "PII masking filter (Aadhaar/PAN/email scrubbing)",
-      "Redis semantic cache (0.92 similarity threshold)",
+      "React dashboard with real-time SSE token streaming",
+      "Spring WebFlux reactive gateway with Kafka event buffering",
+      "PII masking filter interceptor (Aadhaar/PAN/email scrubbing)",
+      "Redis semantic cache with 0.92 cosine similarity threshold",
       "LangChain4j orchestrator agent on Java 21 Virtual Threads",
-      "@Tool: K8s API (pod health audit)",
-      "@Tool: pgvector RAG (codebase semantic search)",
+      "@Tool: Kubernetes API integration (pod health audit)",
+      "@Tool: pgvector RAG (semantic codebase search)",
       "@Tool: AWS Bedrock Claude (code fix reasoning)",
-      "Helm chart deployment on Kubernetes"
+      "Helm chart deployment with values.yaml for multi-env"
     ],
-    outcome: "Reduces mean-time-to-root-cause from 3 hours to 12 minutes. Cuts LLM costs by 52% via caching. Zero PII leakage to external APIs."
+    proves: "Reduces MTTR from 3 hours to 12 minutes. Cuts LLM costs by 52% via caching. Zero PII leakage to external APIs. Handles 10K concurrent TRs without crash."
   }
 ];
 
 window.OUT_OF_SCOPE = [
-  "Training LLMs from scratch (you consume models, not build them)",
-  "Python frameworks: CrewAI, AutoGen, LangChain Python (stick to Java)",
-  "Reinforcement Learning / RLHF (data scientist territory)",
-  "Gradient descent, neural network architecture design",
-  "Fine-tuning models (requires GPU clusters and ML Ops)",
-  "Computer vision, speech recognition, NLP research"
+  { title: "Training LLMs from scratch", why: "You consume models via API, not build them. Training requires GPU clusters and ML Ops expertise that's a different career path.", pointer: "Hugging Face courses, fast.ai" },
+  { title: "Python AI frameworks (CrewAI, AutoGen, LangChain Python)", why: "You're targeting 45 LPA Java roles. Python AI on your resume makes interviewers ask 'why not hire a Python dev instead?'", pointer: "Stick to LangChain4j — native JVM" },
+  { title: "Reinforcement Learning / RLHF", why: "Data scientist territory. If you claim RLHF experience, panels will ask if you've trained a model. When you say no, credibility drops.", pointer: "Instead: build evaluation loops that grade LLM outputs" },
+  { title: "Neural network architecture design", why: "You don't need to understand transformer internals to call Bedrock APIs. Focus on integration, not research.", pointer: "3Blue1Brown videos for conceptual understanding only" },
+  { title: "Fine-tuning models", why: "Requires GPU clusters, training data pipelines, and ML Ops. RAG beats fine-tuning for 95% of enterprise use cases anyway.", pointer: "AWS Bedrock custom models (if ever needed)" },
+  { title: "Computer vision / Speech / NLP research", why: "Specialized domains. Your value is in building the platform that connects ANY model to business logic.", pointer: "Explore after landing the 45 LPA role" }
 ];
 
 window.NEXT_STEPS = [
-  "Build the capstone project end-to-end on your local machine",
-  "Deploy it on AWS free tier (ECS + RDS + Bedrock)",
-  "Write 5 LinkedIn posts about what you built (one per POC)",
-  "Update resume with the POC punchlines from this roadmap",
-  "Practice whiteboarding the CDIP architecture (draw it 10 times)",
-  "Apply to roles titled: Senior Java Engineer, AI Platforms Engineer, Staff Engineer"
+  { label: "Build", title: "Complete the capstone project end-to-end", body: "Deploy on your local machine first. Then move to AWS free tier (ECS + RDS + Bedrock). This is your interview demo." },
+  { label: "Ship", title: "Push to GitHub with clean README", body: "Public repo with architecture diagram, tech stack, and setup instructions. This is your portfolio proof." },
+  { label: "Write", title: "Publish 5 LinkedIn posts (one per POC)", body: "Each post: problem → solution → metric. Tag it #JavaAI #LangChain4j. Build visibility before applying." },
+  { label: "Resume", title: "Update resume with POC punchlines", body: "Use the exact interview punchlines from this roadmap. Metric-driven, architecture-focused language." },
+  { label: "Practice", title: "Whiteboard the CDIP architecture 10 times", body: "Draw it from memory. Explain each component's purpose. Practice answering 'why this choice?' for every box." },
+  { label: "Apply", title: "Target: AI Platforms Engineer / Staff Engineer roles", body: "Search for: Senior Java Engineer + AI, Platform Engineer, Staff Engineer. Companies: fintechs, healthtechs, product companies." }
 ];
