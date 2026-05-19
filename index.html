@@ -1,53 +1,207 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Java AI Architect · 2026 Roadmap</title>
-
-  <meta name="description" content="The complete 2026 roadmap to become a 45 LPA AI-Augmented Java Platforms Architect — 12 weeks, 6 phases, 40 modules, and 1 production-grade capstone project. From Docker fundamentals to multi-agent AI systems in enterprise Java." />
-  <meta name="author" content="Surya Addanki" />
-  <meta name="theme-color" content="#14131a" media="(prefers-color-scheme: dark)" />
-  <meta name="theme-color" content="#f4f1ec" media="(prefers-color-scheme: light)" />
-  <link rel="canonical" href="https://addanki-surya.github.io/ai-era-java-roadmap/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://addanki-surya.github.io/ai-era-java-roadmap/" />
-  <meta property="og:title" content="Java AI Architect · 2026 Roadmap" />
-  <meta property="og:description" content="12 weeks · 6 phases · 40 modules · 1 capstone. The roadmap to become a 45 LPA AI-Augmented Java Platforms Architect." />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Java AI Architect · 2026 Roadmap" />
-  <meta name="twitter:description" content="12 weeks · 6 phases · 40 modules · 1 capstone. From Docker to multi-agent AI systems in enterprise Java." />
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='0.5' stop-color='%2306b6d4'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='-apple-system,system-ui,sans-serif' font-size='18' font-weight='700' fill='white'%3EA%3C/text%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
-
-  <script>
-    (() => {
-      let theme = localStorage.getItem('roadmap-theme');
-      if (!theme) {
-        theme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches)
-          ? 'light'
-          : 'dark';
-      }
-      document.documentElement.dataset.theme = theme;
-    })();
-  </script>
-  <link rel="stylesheet" href="styles.css?v=10" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Era Java Comeback Blueprint | 45 LPA Roadmap</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
-  <div id="root"></div>
-
-  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
-
-  <script src="data.js"></script>
-  <script type="text/babel" data-presets="react" src="app.jsx"></script>
+<section class="hero">
+<div class="hero-badge">🎯 8-Year Java Dev → 45 LPA AI Platforms Architect</div>
+<h1>The AI-Era Java<br>Comeback Blueprint</h1>
+<p>A step-by-step sequential roadmap from absolute scratch to production-grade AI engineering. Follow the path. No shortcuts.</p>
+<div class="hero-stats">
+<div class="stat-box"><div class="num">12</div><div class="label">Weeks</div></div>
+<div class="stat-box"><div class="num">6</div><div class="label">Phases</div></div>
+<div class="stat-box"><div class="num">40</div><div class="label">Topics</div></div>
+<div class="stat-box"><div class="num">8</div><div class="label">Exercises</div></div>
+<div class="stat-box"><div class="num">5</div><div class="label">POCs</div></div>
+</div>
+</section>
+<nav><ul>
+<li><a href="#sequence">📋 Sequence</a></li>
+<li><a href="#roadmap">🗺️ Roadmap</a></li>
+<li><a href="#exercises">🛠️ Exercises</a></li>
+<li><a href="#pocs">📋 POCs</a></li>
+<li><a href="#capstone">🏗️ Capstone</a></li>
+<li><a href="#interview">🎤 Interview</a></li>
+<li><a href="#resources">📚 Resources</a></li>
+</ul></nav>
+<section id="sequence"><div class="container">
+<div class="section-header"><h2>📋 Learning Sequence</h2><p>Start from left. Do NOT skip ahead.</p></div>
+<div class="flow-bar">
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#6366f1,#818cf8);">🐳</div><div class="fl">Docker</div></div><span class="flow-arrow">→</span>
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#3b82f6,#06b6d4);">☸️</div><div class="fl">K8s+Helm</div></div><span class="flow-arrow">→</span>
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#10b981,#06b6d4);">🤖</div><div class="fl">LangChain4j</div></div><span class="flow-arrow">→</span>
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#f59e0b,#f97316);">🧠</div><div class="fl">RAG</div></div><span class="flow-arrow">→</span>
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#ec4899,#f43f5e);">⚡</div><div class="fl">Reactive</div></div><span class="flow-arrow">→</span>
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#ef4444,#f97316);">🛡️</div><div class="fl">Security+AWS</div></div><span class="flow-arrow">→</span>
+<div class="flow-item"><div class="flow-circle" style="background:linear-gradient(135deg,#10b981,#6366f1);">💰</div><div class="fl">45 LPA</div></div>
+</div></div></section>
+<section id="roadmap" class="alt-bg"><div class="container">
+<div class="section-header"><h2>🗺️ Visual Roadmap</h2><p>Click cards to expand details.</p></div>
+<div class="roadmap">
+<div class="rm-node c1"><div class="rm-dot">1</div><div class="rm-card" onclick="this.classList.toggle('open')"><div class="icon">🐳</div><div class="week">Weeks 1–2</div><h3>Docker & Containerization</h3><div class="tags"><span>Dockerfile</span><span>Compose</span><span>Networking</span><span>Multi-stage</span></div><div class="click-hint">▼ Click to expand</div><div class="details"><ul><li>Containers vs VMs — process isolation, not hardware emulation</li><li>Multi-stage Dockerfiles: Maven build → JRE alpine runtime</li><li>Docker Compose: Spring Boot + MySQL + Redis on bridge network</li><li>Container networking, DNS, port mapping</li><li>Health checks, .dockerignore, layer caching</li></ul></div></div></div>
+<div class="rm-node c2"><div class="rm-dot">2</div><div class="rm-card" onclick="this.classList.toggle('open')"><div class="icon">☸️</div><div class="week">Weeks 3–4</div><h3>Kubernetes & Helm</h3><div class="tags"><span>Pods</span><span>Deployments</span><span>Services</span><span>HPA</span><span>Helm</span></div><div class="click-hint">▼ Click to expand</div><div class="details"><ul><li>Pods, Deployments, Services, ConfigMaps, Secrets</li><li>Liveness/Readiness probes for Spring Boot</li><li>HPA for AI workload auto-scaling</li><li>Helm Charts: values.yaml templating</li><li>Practice on Minikube</li></ul></div></div></div>
+<div class="rm-node c3"><div class="rm-dot">3</div><div class="rm-card" onclick="this.classList.toggle('open')"><div class="icon">🤖</div><div class="week">Weeks 5–7</div><h3>LangChain4j & AI Agents</h3><div class="tags"><span>AiServices</span><span>@Tool</span><span>Structured Output</span><span>CoT</span><span>Memory</span><span>Multi-Agent</span></div><div class="click-hint">▼ Click to expand</div><div class="details"><ul><li>AiServices: interface → AI implementation</li><li>@Tool: LLM calls your Java methods autonomously</li><li>Structured Outputs: LLM → Java Records</li><li>Chain-of-Thought & Few-Shot prompting</li><li>Context window engineering & token budgets</li><li>Long-term memory via pgvector</li><li>Multi-agent orchestration with Spring Beans</li></ul></div></div></div>
+<div class="rm-node c4"><div class="rm-dot">4</div><div class="rm-card" onclick="this.classList.toggle('open')"><div class="icon">🧠</div><div class="week">Weeks 8–9</div><h3>RAG & Vector Databases</h3><div class="tags"><span>pgvector</span><span>Embeddings</span><span>HNSW</span><span>Chunking</span><span>Hybrid Search</span></div><div class="click-hint">▼ Click to expand</div><div class="details"><ul><li>pgvector: store embeddings in PostgreSQL</li><li>Document ingestion → chunking → embedding</li><li>HNSW vs IVFFlat index strategies</li><li>Semantic + hybrid search</li><li>Local vs cloud embedding models</li></ul></div></div></div>
+<div class="rm-node c5"><div class="rm-dot">5</div><div class="rm-card" onclick="this.classList.toggle('open')"><div class="icon">⚡</div><div class="week">Weeks 10–11</div><h3>Reactive Streaming & Java 21</h3><div class="tags"><span>Virtual Threads</span><span>WebFlux</span><span>SSE</span><span>Kafka</span></div><div class="click-hint">▼ Click to expand</div><div class="details"><ul><li>Virtual Threads: 50K concurrent LLM calls</li><li>Spring WebFlux: Flux/Mono non-blocking</li><li>SSE: ChatGPT-style token streaming</li><li>Kafka: event buffering + DLQ</li><li>Backpressure handling</li></ul></div></div></div>
+<div class="rm-node c6"><div class="rm-dot">6</div><div class="rm-card" onclick="this.classList.toggle('open')"><div class="icon">🛡️</div><div class="week">Weeks 11–12</div><h3>Security, FinOps & AWS</h3><div class="tags"><span>PII Masking</span><span>Injection Defense</span><span>Cache</span><span>Bedrock</span><span>ECS</span></div><div class="click-hint">▼ Click to expand</div><div class="details"><ul><li>PII masking interceptors (Aadhaar/PAN)</li><li>Prompt injection defense</li><li>Semantic caching via Redis (save 50%)</li><li>AWS Bedrock + ECS + RDS + VPC</li><li>Token compaction algorithms</li></ul></div></div></div>
+</div></div></section>
+<section id="exercises"><div class="container">
+<div class="section-header"><h2>🛠️ Exercises</h2><p>Complete ALL before claiming skills.</p></div>
+<div class="ex-grid">
+<div class="ex-card"><div class="ex-num">1</div><h4>Dockerize Full Stack</h4><p>Spring Boot + MySQL + Redis via docker-compose. HikariCP + Redis caching.</p></div>
+<div class="ex-card"><div class="ex-num">2</div><h4>K8s + Helm Deploy</h4><p>Convert to K8s manifests. Helm chart. Minikube. Kill pod → auto-restart.</p></div>
+<div class="ex-card"><div class="ex-num">3</div><h4>First AI Agent</h4><p>LangChain4j AiService + 2 @Tools. LLM picks which tool to call.</p></div>
+<div class="ex-card"><div class="ex-num">4</div><h4>RAG Pipeline</h4><p>10 Java files → pgvector. Semantic search: "Which class handles payments?"</p></div>
+<div class="ex-card"><div class="ex-num">5</div><h4>Reactive Streaming</h4><p>WebFlux SSE + EventSource. Tokens appear one-by-one. Virtual Threads.</p></div>
+<div class="ex-card"><div class="ex-num">6</div><h4>PII + Injection Defense</h4><p>Filter masks PAN/Aadhaar. Rejects injection attempts with 403.</p></div>
+<div class="ex-card"><div class="ex-num">7</div><h4>Semantic Cache</h4><p>Redis similarity >0.92 → cached response. 2nd query: <50ms.</p></div>
+<div class="ex-card"><div class="ex-num">8</div><h4>Kafka Pipeline</h4><p>Producer → topic → consumer strips PII, embeds, stores pgvector. DLQ.</p></div>
+</div></div></section>
+<section id="pocs" class="alt-bg"><div class="container">
+<div class="section-header"><h2>📋 Resume POCs</h2><p>Present as real project work.</p></div>
+<div class="poc-grid">
+<div class="poc-card"><div class="poc-badge" style="background:linear-gradient(135deg,#6366f1,#818cf8);">1</div><h3>Self-Healing CI/CD Agent</h3><p class="desc">Jenkins breaks → agent parses logs → RAG finds fixes → patches → submits PR.</p><div class="punch">💬 "Reduced pipeline triage by 40% using LangChain4j + RAG."</div></div>
+<div class="poc-card"><div class="poc-badge" style="background:linear-gradient(135deg,#3b82f6,#06b6d4);">2</div><h3>Full-Stack Type Sync</h3><p class="desc">Java DTO changes → agent generates matching TypeScript interfaces.</p><div class="punch">💬 "Eliminated type mismatch exceptions across 47 endpoints."</div></div>
+<div class="poc-card"><div class="poc-badge" style="background:linear-gradient(135deg,#10b981,#06b6d4);">3</div><h3>DB Query Optimizer</h3><p class="desc">Slow queries → Kafka → agent runs EXPLAIN → generates indexes.</p><div class="punch">💬 "Cut read latency by 35% via AI execution path analysis."</div></div>
+<div class="poc-card"><div class="poc-badge" style="background:linear-gradient(135deg,#f59e0b,#f97316);">4</div><h3>TR Auto-Triage</h3><p class="desc">Customer TR → PII masked → RAG + K8s tool → streams root cause.</p><div class="punch">💬 "MTTR from 3 hours to 12 minutes for P1 incidents."</div></div>
+<div class="poc-card"><div class="poc-badge" style="background:linear-gradient(135deg,#ec4899,#ef4444);">5</div><h3>AI Cost Gateway</h3><p class="desc">Semantic cache + token compaction + model routing.</p><div class="punch">💬 "Reduced monthly LLM costs by 52%."</div></div>
+</div></div></section>
+<section id="capstone"><div class="container">
+<div class="section-header"><h2>🏗️ Capstone Project</h2><p>Covers EVERY skill. Your interview flagship.</p></div>
+<div class="arch-box">
+[React] ─(SSE)─► [WebFlux Gateway] ─► [Kafka Buffer]
+                         │
+               ┌─────────┴─────────┐
+               ▼                   ▼
+       [PII Masking]        [Redis Cache]
+               │                   │
+               └─────────┬─────────┘
+                         ▼ (miss)
+             [LangChain4j Agent + Virtual Threads]
+                         │
+           ┌─────────────┼─────────────┐
+           ▼             ▼             ▼
+    [@Tool: K8s]  [@Tool: Bedrock] [@Tool: pgvector]
+           └─────────────┼─────────────┘
+                         ▼
+             [Streamed Fix → React UI]</div>
+</div></section>
+<section id="interview" class="alt-bg"><div class="container">
+<div class="section-header"><h2>🎤 Interview Playbook</h2><p>Exact answers that make you sound like a veteran.</p></div>
+<div class="int-grid">
+<div class="int-item"><div class="q">"Your AI experience?"</div><div class="a">Production LangChain4j agents with autonomous @Tool calling against live K8s clusters and pgvector RAG. Streamed results in real-time via WebFlux SSE.</div></div>
+<div class="int-item"><div class="q">"How handle AI costs?"</div><div class="a">Semantic Redis cache (0.92 threshold) + token compaction + model routing. Cut Bedrock billing by 52%.</div></div>
+<div class="int-item"><div class="q">"Data security?"</div><div class="a">Zero-trust Java filter interceptor masks PII via regex. Rejects prompt injection. No sensitive data leaves VPC.</div></div>
+<div class="int-item"><div class="q">"Scale?"</div><div class="a">Java 21 Virtual Threads (50K concurrent). Kafka buffering. WebFlux non-blocking streaming to thousands of clients.</div></div>
+<div class="int-item"><div class="q">"Why Java not Python?"</div><div class="a">LangChain4j = native JVM. No new runtime, no new deploy pipeline, no new security audit. Direct Spring Boot integration.</div></div>
+<div class="int-item"><div class="q">"System design?"</div><div class="a">Reactive ingestion → PII filter → semantic cache → LangChain4j agent → @Tool execution → SSE streaming. Emphasize cost + security.</div></div>
+</div></div></section>
+<section id="resources"><div class="container">
+<div class="section-header"><h2>📚 Complete Learning Table</h2><p>40 topics with curated YouTube videos (2024–2025), search fallback, and official docs. Filter by phase.</p></div>
+<div class="filter-row" id="filters">
+<button class="filter-btn active" data-phase="all">All Phases</button>
+<button class="filter-btn" data-phase="1">🐳 Docker</button>
+<button class="filter-btn" data-phase="2">☸️ Kubernetes</button>
+<button class="filter-btn" data-phase="3">🤖 LangChain4j</button>
+<button class="filter-btn" data-phase="4">🧠 RAG</button>
+<button class="filter-btn" data-phase="5">⚡ Reactive</button>
+<button class="filter-btn" data-phase="6">🛡️ Security/AWS</button>
+</div>
+<div style="overflow-x:auto;"><table class="learn-table"><thead><tr><th>#</th><th>Topic</th><th>Concepts</th><th>📺 Best YouTube Video</th><th>🔍 Search More</th><th>📄 Official Docs</th></tr></thead><tbody id="tbody"></tbody></table></div>
+</div></section>
+<footer>
+<p style="font-size:1.1rem;margin-bottom:.5rem;">🚀 Start Today: <code style="background:#f1f5f9;padding:.3rem .8rem;border-radius:6px;">docker --version</code></p>
+<p>You're not becoming a data scientist. You're becoming the engineer who makes AI <em>work</em> inside enterprise Java.</p>
+</footer>
+<script>
+const phases=[
+{id:1,label:"🐳 Phase 1: Docker & Containerization (Weeks 1–2)",cls:"phase-1"},
+{id:2,label:"☸️ Phase 2: Kubernetes & Helm (Weeks 3–4)",cls:"phase-2"},
+{id:3,label:"🤖 Phase 3: LangChain4j & AI Agents (Weeks 5–7)",cls:"phase-3"},
+{id:4,label:"🧠 Phase 4: RAG & Vector Databases (Weeks 8–9)",cls:"phase-4"},
+{id:5,label:"⚡ Phase 5: Reactive Streaming & Java 21 (Weeks 10–11)",cls:"phase-5"},
+{id:6,label:"🛡️ Phase 6: Security, FinOps & AWS (Weeks 11–12)",cls:"phase-6"}];
+const rows=[
+{n:1,p:1,topic:"Docker Fundamentals",concepts:"Containers, images vs containers, Docker architecture",yt:"https://www.youtube.com/watch?v=GFgJkfScVNU",ytL:"Learn Docker in 1 Hour (2024) — Bret Fisher",sq:"docker tutorial for beginners 2024 2025 full course",doc:"https://docs.docker.com/get-started/overview/",docL:"Docker Overview"},
+{n:2,p:1,topic:"Docker Installation",concepts:"Install Docker Desktop, verify CLI, run first container",yt:"https://www.youtube.com/watch?v=pg19Z8LL06w",ytL:"Docker Crash Course [NEW] — Nana",sq:"install docker desktop 2025 step by step",doc:"https://docs.docker.com/get-docker/",docL:"Docker Install"},
+{n:3,p:1,topic:"Dockerfile Deep Dive",concepts:"FROM, COPY, RUN, EXPOSE, ENTRYPOINT, CMD, build context",yt:"https://www.youtube.com/watch?v=3c-iBn73dDE",ytL:"Docker Full Course 3hrs — TechWorld Nana",sq:"dockerfile tutorial 2024 2025 best practices",doc:"https://docs.docker.com/reference/dockerfile/",docL:"Dockerfile Ref"},
+{n:4,p:1,topic:"Multi-stage Builds",concepts:"Build (Maven) + Runtime (JRE alpine), image size reduction",yt:"https://www.youtube.com/watch?v=RqTEHSBrYFw",ytL:"Complete Docker Course — DevOps Directive",sq:"docker multi stage build java spring boot 2024",doc:"https://docs.docker.com/build/building/multi-stage/",docL:"Multi-stage Docs"},
+{n:5,p:1,topic:"Docker Compose",concepts:"services, networks, volumes, depends_on, health checks",yt:"https://www.youtube.com/watch?v=GFgJkfScVNU",ytL:"Learn Docker (Compose section) — Bret Fisher",sq:"docker compose tutorial 2025 beginners",doc:"https://docs.docker.com/compose/",docL:"Compose Docs"},
+{n:6,p:1,topic:"Container Networking",concepts:"Bridge networks, DNS, port mapping, inter-container comms",yt:"https://www.youtube.com/watch?v=3c-iBn73dDE",ytL:"Docker Full Course (Networking) — Nana",sq:"docker networking bridge 2024 2025",doc:"https://docs.docker.com/network/",docL:"Network Docs"},
+{n:7,p:1,topic:"Docker for Spring Boot",concepts:"Containerize Spring Boot, connect MySQL, production practices",yt:"https://www.youtube.com/watch?v=RqTEHSBrYFw",ytL:"Docker Course (Spring Boot) — DevOps Directive",sq:"dockerize spring boot mysql 2025",doc:"https://spring.io/guides/topicals/spring-boot-docker",docL:"Spring Docker Guide"},
+{n:8,p:2,topic:"Kubernetes Concepts",concepts:"K8s orchestration, master/worker, control plane",yt:"https://www.youtube.com/watch?v=2T86xAtR6Fo",ytL:"Complete K8s Course (Aug 2024) — DevOps Directive",sq:"kubernetes tutorial beginners 2024 2025",doc:"https://kubernetes.io/docs/concepts/overview/",docL:"K8s Overview"},
+{n:9,p:2,topic:"Minikube & kubectl",concepts:"Install Minikube, kubectl commands, cluster management",yt:"https://www.youtube.com/watch?v=X48VuDVv0do",ytL:"K8s Tutorial 4hrs — TechWorld Nana",sq:"minikube kubectl setup 2025",doc:"https://minikube.sigs.k8s.io/docs/start/",docL:"Minikube Start"},
+{n:10,p:2,topic:"Pods & Deployments",concepts:"Pod YAML, replicas, rolling updates, rollback",yt:"https://www.youtube.com/watch?v=2T86xAtR6Fo",ytL:"K8s Course (Pods) — DevOps Directive (2024)",sq:"kubernetes pods deployments 2024 2025",doc:"https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",docL:"Deployment Docs"},
+{n:11,p:2,topic:"Services & Networking",concepts:"ClusterIP, NodePort, LoadBalancer, service discovery",yt:"https://www.youtube.com/watch?v=X48VuDVv0do",ytL:"K8s Tutorial (Services) — Nana",sq:"kubernetes services networking 2024",doc:"https://kubernetes.io/docs/concepts/services-networking/service/",docL:"Services Docs"},
+{n:12,p:2,topic:"ConfigMaps & Secrets",concepts:"Externalize config, mount as env vars, base64",yt:"https://www.youtube.com/watch?v=2T86xAtR6Fo",ytL:"K8s Course (ConfigMaps) — DevOps Directive",sq:"kubernetes configmap secrets 2024 2025",doc:"https://kubernetes.io/docs/concepts/configuration/",docL:"Config Docs"},
+{n:13,p:2,topic:"Health Probes & HPA",concepts:"Liveness, Readiness probes, Horizontal Pod Autoscaler",yt:"https://www.youtube.com/watch?v=MTHGoGUFpvE",ytL:"K8s Zero to Hero 2025 — Alta3 Research",sq:"kubernetes probes hpa autoscaling 2024 2025",doc:"https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/",docL:"HPA Docs"},
+{n:14,p:2,topic:"Helm Charts",concepts:"Chart structure, templates, values.yaml, install/upgrade",yt:"https://www.youtube.com/watch?v=k4vhgeTAOn0",ytL:"Helm Tutorial (Mar 2025) — #40DaysOfKubernetes",sq:"helm chart tutorial 2024 2025",doc:"https://helm.sh/docs/intro/quickstart/",docL:"Helm Quickstart"},
+{n:15,p:3,topic:"LLM Fundamentals",concepts:"What is an LLM, tokens, context window, temperature, API",yt:"https://www.youtube.com/watch?v=x8kkjmCZTaw",ytL:"LangChain4j — LLMs in Java (Mar 2024) — Solid Coder",sq:"what is LLM explained 2025",doc:"https://platform.openai.com/docs/introduction",docL:"OpenAI API Intro"},
+{n:16,p:3,topic:"LangChain4j Setup",concepts:"Maven dependency, model config, first AI call in Java",yt:"https://www.youtube.com/watch?v=PeHY-Lj2_Ng",ytL:"AI Business Apps LangChain4j Spring Boot (Jul 2024)",sq:"langchain4j spring boot 2024 2025",doc:"https://docs.langchain4j.dev/get-started",docL:"LangChain4j Start"},
+{n:17,p:3,topic:"AiServices Pattern",concepts:"Declare Java interface → AI implementation",yt:"https://www.youtube.com/watch?v=x8kkjmCZTaw",ytL:"LangChain4j AiServices (2024) — Solid Coder",sq:"langchain4j aiservices java 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/ai-services",docL:"AiServices Docs"},
+{n:18,p:3,topic:"Tool Calling (@Tool)",concepts:"Annotate Java methods, LLM decides when to call",yt:"https://www.youtube.com/watch?v=PeHY-Lj2_Ng",ytL:"LangChain4j Tools Spring Boot (Jul 2024)",sq:"langchain4j tool calling java 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/tools",docL:"Tools Docs"},
+{n:19,p:3,topic:"Structured Outputs",concepts:"Force LLM → Java Records/DTOs, JSON schema",yt:"https://www.youtube.com/watch?v=x8kkjmCZTaw",ytL:"LangChain4j Structured Output (2024)",sq:"langchain4j structured output java 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/structured-outputs",docL:"Structured Output Docs"},
+{n:20,p:3,topic:"Prompt Engineering",concepts:"System prompts, CoT, Few-Shot, Zero-Shot, templates",yt:"https://www.youtube.com/watch?v=x8kkjmCZTaw",ytL:"LangChain4j Prompting Patterns (2024)",sq:"prompt engineering 2025 chain of thought",doc:"https://www.promptingguide.ai/",docL:"Prompting Guide"},
+{n:21,p:3,topic:"Chat Memory",concepts:"MessageWindowChatMemory, stateful conversations",yt:"https://www.youtube.com/watch?v=PeHY-Lj2_Ng",ytL:"LangChain4j Chat Memory (Jul 2024)",sq:"langchain4j chat memory 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/chat-memory",docL:"Memory Docs"},
+{n:22,p:3,topic:"Context Window Engineering",concepts:"Token budgets, sliding windows, context compression",yt:"https://www.youtube.com/watch?v=PeHY-Lj2_Ng",ytL:"LangChain4j Context Management (2024)",sq:"LLM context window management 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/chat-memory",docL:"Context Docs"},
+{n:23,p:3,topic:"Long-term Memory",concepts:"pgvector as persistent memory, session vs knowledge memory",yt:"https://www.youtube.com/watch?v=Y291afdLroQ",ytL:"AI Agents Long-term Memory Java (Apr 2025)",sq:"AI agent long term memory vector 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/rag",docL:"RAG as Memory"},
+{n:24,p:3,topic:"Multi-Agent Design",concepts:"Specialized agents, supervisor pattern, agent messaging",yt:"https://www.youtube.com/watch?v=Y291afdLroQ",ytL:"Building Agents Java+Spring AI+Bedrock (Apr 2025)",sq:"multi agent AI java 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/ai-services",docL:"Multi-Agent Docs"},
+{n:25,p:4,topic:"RAG Concepts",concepts:"Why LLMs hallucinate, retrieval fixes it, full RAG flow",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"RAG in Java & Spring AI — Dan Vega (Apr 2024)",sq:"RAG explained 2025 java",doc:"https://docs.langchain4j.dev/tutorials/rag",docL:"LangChain4j RAG"},
+{n:26,p:4,topic:"Embeddings",concepts:"Text → vector, cosine similarity, dimensions, models",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"RAG Spring AI (Embeddings) — Dan Vega",sq:"embeddings vector explained 2024 2025",doc:"https://platform.openai.com/docs/guides/embeddings",docL:"Embeddings Guide"},
+{n:27,p:4,topic:"pgvector Setup",concepts:"PostgreSQL + pgvector, vector columns, basic queries",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"RAG Spring AI + pgvector — Dan Vega",sq:"pgvector postgresql tutorial 2024 2025",doc:"https://github.com/pgvector/pgvector",docL:"pgvector GitHub"},
+{n:28,p:4,topic:"Document Chunking",concepts:"Fixed-size, overlapping, semantic chunking, token limits",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"Spring AI RAG Chunking — Dan Vega",sq:"document chunking RAG 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/rag#document-splitters",docL:"Splitters Docs"},
+{n:29,p:4,topic:"Vector Indexing",concepts:"HNSW vs IVFFlat, index creation, trade-offs",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"Spring AI RAG (Index) — Dan Vega",sq:"HNSW IVFFlat pgvector 2024 2025",doc:"https://www.timescale.com/blog/nearest-neighbor-indexes-what-are-ivfflat-indexes-in-pgvector-and-how-do-they-work/",docL:"Index Deep Dive"},
+{n:30,p:4,topic:"Hybrid Search",concepts:"Vector similarity + SQL filtering, re-ranking",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"Spring AI RAG Hybrid Search — Dan Vega",sq:"hybrid search vector RAG 2024 2025",doc:"https://docs.langchain4j.dev/tutorials/rag",docL:"RAG Docs"},
+{n:31,p:5,topic:"Java 21 Virtual Threads",concepts:"Project Loom, VT vs platform threads, structured concurrency",yt:"https://www.youtube.com/watch?v=N3mKRszRRC4",ytL:"WebFlux vs Virtual Threads Showdown (May 2024)",sq:"java 21 virtual threads 2024 2025",doc:"https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html",docL:"Oracle VT Docs"},
+{n:32,p:5,topic:"Spring WebFlux",concepts:"Reactive Flux/Mono, event loop, non-blocking I/O",yt:"https://www.youtube.com/watch?v=N3mKRszRRC4",ytL:"WebFlux vs VT Showdown (2024)",sq:"spring webflux tutorial 2024 2025",doc:"https://docs.spring.io/spring-framework/reference/web/webflux.html",docL:"WebFlux Ref"},
+{n:33,p:5,topic:"Server-Sent Events (SSE)",concepts:"text/event-stream, EventSource JS, real-time streaming",yt:"https://www.youtube.com/watch?v=N3mKRszRRC4",ytL:"Spring Boot SSE Streaming (2024)",sq:"SSE spring boot streaming 2024 2025",doc:"https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",docL:"MDN SSE Docs"},
+{n:34,p:5,topic:"Apache Kafka Fundamentals",concepts:"Topics, partitions, producers, consumers, offsets",yt:"https://www.youtube.com/watch?v=SqVfCyfCJqw",ytL:"Kafka Spring Boot — Amigoscode",sq:"kafka tutorial beginners 2024 2025",doc:"https://kafka.apache.org/documentation/",docL:"Kafka Docs"},
+{n:35,p:5,topic:"Kafka with Spring Boot",concepts:"spring-kafka, KafkaTemplate, @KafkaListener, DLQ",yt:"https://www.youtube.com/watch?v=SqVfCyfCJqw",ytL:"Kafka Tutorial Spring Boot — Amigoscode",sq:"spring boot kafka 2024 2025",doc:"https://www.baeldung.com/spring-kafka",docL:"Baeldung Kafka"},
+{n:36,p:6,topic:"PII Masking in Java",concepts:"Regex for Aadhaar/PAN/email, Spring filter interceptors",yt:"https://www.youtube.com/watch?v=PeHY-Lj2_Ng",ytL:"Spring Boot Filters (Jul 2024)",sq:"spring boot filter interceptor 2024 2025",doc:"https://www.baeldung.com/spring-boot-add-filter",docL:"Baeldung Filters"},
+{n:37,p:6,topic:"Prompt Injection Defense",concepts:"Attack patterns, input sanitization, boundaries",yt:"https://www.youtube.com/watch?v=x8kkjmCZTaw",ytL:"LangChain4j Guardrails (2024)",sq:"prompt injection defense 2024 2025",doc:"https://simonwillison.net/2022/Sep/12/prompt-injection/",docL:"Injection Guide"},
+{n:38,p:6,topic:"Semantic Caching (Redis)",concepts:"Embed query → cosine similarity → cache hit/miss, TTL",yt:"https://www.youtube.com/watch?v=4-rG2qsTrAs",ytL:"Spring AI + Redis Cache — Dan Vega",sq:"redis vector semantic cache 2024 2025",doc:"https://redis.io/docs/latest/develop/get-started/vector-database/",docL:"Redis Vector Docs"},
+{n:39,p:6,topic:"AWS Bedrock (Java SDK)",concepts:"InvokeModel API, Claude/Titan, streaming, IAM",yt:"https://www.youtube.com/watch?v=Y291afdLroQ",ytL:"Java+Spring AI+Bedrock (Apr 2025)",sq:"aws bedrock java 2024 2025",doc:"https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html",docL:"Bedrock Docs"},
+{n:40,p:6,topic:"AWS ECS + RDS + VPC",concepts:"Deploy containers, managed PostgreSQL, private subnets",yt:"https://www.youtube.com/watch?v=Y291afdLroQ",ytL:"Java Spring AI AWS Deploy (Apr 2025)",sq:"aws ecs rds vpc deploy 2024 2025",doc:"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started.html",docL:"ECS Docs"}
+];
+function ytSearch(q){return"https://www.youtube.com/results?search_query="+encodeURIComponent(q)+"&sp=EgQIBBAB";}
+const tbody=document.getElementById("tbody");
+let cur="all";
+function render(){
+tbody.innerHTML="";
+phases.forEach(ph=>{
+const phRows=rows.filter(r=>r.p===ph.id);
+if(cur!=="all"&&String(ph.id)!==cur)return;
+const tr=document.createElement("tr");
+tr.className="phase-label";
+tr.innerHTML='<td colspan="6" class="'+ph.cls+'">'+ph.label+'</td>';
+tbody.appendChild(tr);
+phRows.forEach(r=>{
+const tr2=document.createElement("tr");
+tr2.className="data-row";
+tr2.innerHTML=
+'<td><span class="seq-num">'+r.n+'</span></td>'+
+'<td class="topic-cell">'+r.topic+'</td>'+
+'<td class="concepts-cell">'+r.concepts+'</td>'+
+'<td><a class="yt-btn" href="'+r.yt+'" target="_blank">▶ '+r.ytL+'</a></td>'+
+'<td><a class="search-btn" href="'+ytSearch(r.sq)+'" target="_blank">🔍 More 2024–25</a></td>'+
+'<td><a class="doc-btn" href="'+r.doc+'" target="_blank">📄 '+r.docL+'</a></td>';
+tbody.appendChild(tr2);
+});
+});
+}
+document.getElementById("filters").addEventListener("click",e=>{
+const btn=e.target.closest(".filter-btn");
+if(!btn)return;
+document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+btn.classList.add("active");
+cur=btn.dataset.phase;
+render();
+});
+render();
+</script>
 </body>
 </html>
