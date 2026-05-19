@@ -1,73 +1,28 @@
-# AI Engineer Roadmap 2026
+# Java AI Architect · 2026 Roadmap
 
-An interactive roadmap for becoming a production-ready AI engineer in 2026.
-
-The site covers a 26-week learning path across Python foundations, LLM mental models, prompt engineering, cloud infrastructure, RAG, tools, MCP, single-agent systems, memory, multi-agent orchestration, guardrails, deployment, and capstone projects.
+An interactive roadmap for becoming a 45 LPA AI-Augmented Java Platforms Architect in 2026.
 
 ## Live Site
 
-GitHub Pages:
+https://addanki-surya.github.io/ai-era-java-roadmap/
 
-https://ch-balaji.github.io/ai-engineer-roadmap/
+## Overview
 
-## About
+- **12 weeks** · 6 phases · 40 modules · 1 capstone project
+- From Docker fundamentals to multi-agent AI systems in enterprise Java
+- Target: Senior Full-Stack & AI Platforms Engineer (45 LPA)
 
-This roadmap is created by Balaji Chippada, an AI/ML practitioner and tutor who has worked across traditional machine learning, production-scale agentic AI systems, and AI/data science education.
+## Tech Stack Covered
 
-The curriculum is designed around one idea:
+- Java 21 (Virtual Threads, Structured Concurrency)
+- Spring Boot 3.x + WebFlux
+- LangChain4j (AiServices, @Tool, RAG)
+- PostgreSQL + pgvector
+- Docker, Kubernetes, Helm
+- Apache Kafka
+- Redis (Semantic Caching)
+- AWS (Bedrock, ECS, RDS, VPC)
 
-> If I had to start all over again in 2026, this is how I would begin.
+## Local Development
 
-## Tech Stack
-
-- Static HTML
-- CSS
-- React via CDN
-- Babel standalone for JSX in the browser
-- GitHub Pages for hosting
-
-No build step is required.
-
-## Run Locally
-
-From the project folder:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000/
-```
-
-## Project Structure
-
-```text
-index.html
-Roadmap.html
-app.jsx
-data.js
-styles.css
-uploads/
-```
-
-## Contributing
-
-This project is open source and open to contributions.
-
-Contributions are welcome for:
-
-- Improving the curriculum structure
-- Adding better explanations or learning outcomes
-- Fixing UI issues
-- Improving accessibility and responsiveness
-- Suggesting new capstone projects
-- Updating tools, frameworks, or platform references
-
-Please open an issue or pull request with a clear description of the change.
-
-## License
-
-No license has been added yet. If you want to reuse or adapt this project, please open an issue first.
+Open `index.html` in a browser. No build step required.
