@@ -471,23 +471,6 @@ function App() {
         </div>
       </section>
 
-      {/* INSTRUCTOR */}
-      <section className="instructor reveal" data-screen-label="03 Instructor">
-            {/* Author section removed */}
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5a3 3 0 0 0-2.1 2.1C2 9 2 12 2 12s0 3 .4 4.8a3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1C22 15 22 12 22 12s0-3-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" />
-                </svg>
-              </a>
-              <a className="instructor__social" href="https://www.instagram.com/inside.datascience/" target="_blank" rel="noopener noreferrer" aria-label="Open Inside Data Science on Instagram">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M7.5 2.8h9A4.7 4.7 0 0 1 21.2 7.5v9a4.7 4.7 0 0 1-4.7 4.7h-9a4.7 4.7 0 0 1-4.7-4.7v-9a4.7 4.7 0 0 1 4.7-4.7Zm0 2A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9Zm4.5 3.1a4.1 4.1 0 1 1 0 8.2 4.1 4.1 0 0 1 0-8.2Zm0 2a2.1 2.1 0 1 0 0 4.2 2.1 2.1 0 0 0 0-4.2Zm4.4-2.4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* DOCK */}
       <div className={`dock ${dockVisible ? 'visible' : ''}`}>
         {window.ROADMAP.map((p, i) => (
