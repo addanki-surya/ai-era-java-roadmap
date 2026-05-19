@@ -1,1 +1,3 @@
-.DS_Store
+*.Zone.Identifier
+expected_dashboard/
+uploads/
